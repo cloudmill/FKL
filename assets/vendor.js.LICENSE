@@ -23,8 +23,6 @@
  * Date: 2019-04-08
  */
 
-/*! nouislider - 14.1.1 - 12/15/2019 */
-
 /*!
  * fullPage 3.0.8
  * https://github.com/alvarotrigo/fullPage.js
@@ -36,6 +34,8 @@
  * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
  */
 
+/*! nouislider - 14.1.1 - 12/15/2019 */
+
 /*! Magnific Popup - v1.1.0 - 2016-02-20
 * http://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2016 Dmitry Semenov; */
@@ -43,4 +43,12 @@
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
  * Released under MIT license, http://github.com/requirejs/almond/LICENSE
+ */
+
+/*!
+ * jQuery Mousewheel 3.1.13
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license
+ * http://jquery.org/license
  */
