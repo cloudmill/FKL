@@ -48,53 +48,6 @@
 				</div>
 				<div class="loader-outer"></div>
 			</div>
-			<div class="mfp-hide white-popup-block popup-block" id="cdek">
-				<div class="row row-null">
-					<div class="col col__md-7 col__xs-12 relative">
-						<div class="icon-delete popup-modal-dismiss"></div>
-						<div class="popup-block-header">
-							<h4>Самовывоз из пункта выдачи CDEK (по предоплате)</h4>
-							<div><span class="text__lg">2 540 р.</span><span class="text__sm text--grey">~ через 6 дней (17.04)</span></div>
-						</div>
-						<div class="searchAdr">
-							<div class="searchAdr-field">
-								<input class="control" type="search" placeholder="Введите адрес офиса" />
-								<button><img src="assets/images/search_blue.svg" alt="" />
-								</button>
-							</div>
-							<div class="searchAdr-list scrollContent">
-								<div class="radio">
-									<input class="city" type="radio" id="point1" name="points" value="central" />
-									<label class="label" for="point1">Славянка, Колпинское шоссе, 38, м. Купчино</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point2" name="points" value="northwest" />
-									<label class="label" for="point2">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point3" name="points" value="south" />
-									<label class="label" for="point3">Славянка, Колпинское шоссе, 38, м. Купчино</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point4" name="points" value="volga" />
-									<label class="label" for="point4">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point5" name="points" value="ural" />
-									<label class="label" for="point5">Славянка, Колпинское шоссе, 38, м. Купчино</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point6" name="points" value="east" />
-									<label class="label" for="point6">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
-								</div>
-							</div><a class="btn btn--info btn--full btn--icon" href="#">Выбрать<img src="assets/images/whiteRightAr.svg" alt="" /></a>
-						</div>
-					</div>
-					<div class="col col__md-5 col__xs-12">
-						<div class="googleMap" id="googleMapsBlue"></div>
-					</div>
-				</div>
-			</div>
 			<div class="searchBar">
 				<div class="container">
 					<div class="searchBar__close"><img src="assets/images/close-wh.svg" alt="" /></div>
@@ -127,12 +80,12 @@
 				</div>
 				<div class="menuBar__close"><i class="icon icon_close"></i>Закрыть</div>
 				<div class="menuBar__content">
-					<div class="container"><a class="menuBar__logo hidden__xs hidden__sm visible__md visible__lg visible__xl" href="/"><img src="assets/images/logo_Lblue.svg" alt="" /></a>
+					<div class="container"><a class="menuBar__logo menuBar-item animated hidden__xs hidden__sm visible__md visible__lg visible__xl" href="/"><img src="assets/images/logo_Lblue.svg" alt="" /></a>
 						<div class="row between__xs">
-							<div class="col col__md-3 col__lg-3 col__xs-12">
+							<div class="col col__md-3 col__lg-3 col__xs-12 menuBar-item animated">
 								<div class="menuBar__list"><a class="menuBar__list__item" href="">Дилерам</a><a class="menuBar__list__item" href="">О компании</a><a class="menuBar__list__item" href="">Новости</a><a class="menuBar__list__item" href="">Акции</a><a class="menuBar__list__item" href="">Каталог</a><a class="menuBar__list__item" href="">Где купить</a><a class="menuBar__list__item" href="">Контакты</a><a class="menuBar__list__item" href="">Обратная связь</a></div>
 							</div>
-							<div class="col col__md-5 col__lg-6 col__xs-12">
+							<div class="col col__md-5 col__lg-6 col__xs-12 menuBar-item animated">
 								<div class="footer__title">Центральный офис</div>
 								<div class="footer__text">Россия, Воронеж,<br />ул. Новгородская, 121, оф. 1</div>
 								<div class="hidden__md">
@@ -146,7 +99,7 @@
 									<div class="footer__social"><a class="footer__social__item" href=""><i class="icon icon_fb"></i></a><a class="footer__social__item" href=""><i class="icon icon_vk"></i></a><a class="footer__social__item" href=""><i class="icon icon_yt"></i></a><a class="footer__social__item" href=""><i class="icon icon_inst"></i></a></div>
 								</div>
 							</div>
-							<div class="col col__md-4 col__lg-3 col__xs-12">
+							<div class="col col__md-4 col__lg-3 col__xs-12 menuBar-item animated">
 								<div class="visible__md visible__lg visible__xl hidden__xs hidden__sm">
 									<div class="menuBar__phone">+7 473 274-71-50</div>
 									<div class="footer__text">Многоканальный</div><br /><br />
@@ -196,24 +149,29 @@
 			</header>
 			<main class="page login">
 				<div class="section">
-					<div class="section__left">
+					<div class="section__left" data-aos="">
 						<div class="login-info">
 							<div class="container">
 								<div class="mainTitle">
-									<h2 class="animated" data-animation="slideInDown" data-animation-delay="500">Оформить заказ</h2>
-									<div class="breadLink animated" data-animation="slideInRight" data-animation-delay="600">Главная<span>Оформить заказ /</span></div>
+									<h2 data-aos="fade-right" data-aos-delay="500">Оформить заказ</h2>
+									<div class="breadLink" data-aos="fade-left" data-aos-delay="600">Главная<span>Оформить заказ /</span>
+									</div>
 								</div>
 							</div>
-							<div class="tabs animated" data-animation="slideInUp" data-animation-delay="700">
+							<div class="tabs" data-aos="fade-up" data-aos-delay="700">
 								<div class="tabs-list"><a class="tab active" href="#stage1">Есть аккаунт</a><a class="tab" href="#stage2">Регистрация</a></div>
 								<div class="tabs-content show" id="stage1">
 									<form class="regForm" method="POST" action="">
 										<div class="row row-null">
 											<div class="col col__md-6 col__xs-12">
-												<input class="control" type="email" name="email" id="email" placeholder="Электронная почта" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+												<label class="control-body" for="email">
+													<input class="control" type="email" name="email" id="email" placeholder="Электронная почта" required="required" />
+												</label>
 											</div>
 											<div class="col col__md-6 col__xs-12">
-												<input class="control" type="password" name="password" id="password" placeholder="Пароль" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+												<label class="control-body" for="password">
+													<input class="control" type="password" name="password" id="password" placeholder="Пароль" required="required" />
+												</label>
 											</div>
 										</div>
 										<div class="forgot-pass"><a href="#">Забыли пароль?</a></div><a class="btn btn--info btn--full btn--icon franciscoItem" href="#">
@@ -233,75 +191,117 @@
 										<form class="regForm" method="POST" action="">
 											<div class="row row-null" id="resident" style="display:none">
 												<div class="col col__xs-12">
-													<input class="control" type="text" name="name" id="name" placeholder="Ваше имя" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="name">
+														<input class="control" type="text" name="name" id="name" placeholder="Ваше имя" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="phone" id="phone" placeholder="Номер телефона" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="phone">
+														<input class="control" type="text" name="phone" id="phone" placeholder="Номер телефона" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="email" name="email1" id="email1" placeholder="Электронная почта" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="email1">
+														<input class="control" type="email" name="email1" id="email1" placeholder="Электронная почта" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="password" name="password1" id="password1" placeholder="Пароль" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="password1">
+														<input class="control" type="password" name="password1" id="password1" placeholder="Пароль" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="password" name="repassword1" id="repassword1" placeholder="Повторите пароль" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="repassword1">
+														<input class="control" type="password" name="repassword1" id="repassword1" placeholder="Повторите пароль" required="required" />
+													</label>
 												</div>
 											</div>
 											<div class="row row-null" id="professional">
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="name2" id="name2" placeholder="Ваше имя" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="name2">
+														<input class="control" type="text" name="name2" id="name2" placeholder="Ваше имя" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="company" id="company" placeholder="Название компании" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="company">
+														<input class="control" type="text" name="company" id="company" placeholder="Название компании" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="phone2" id="phone2" placeholder="Номер телефона" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="phone2">
+														<input class="control" type="text" name="phone2" id="phone2" placeholder="Номер телефона" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="inn" id="inn" placeholder="ИНН" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="inn">
+														<input class="control" type="text" name="inn" id="inn" placeholder="ИНН" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="email" name="email2" id="email2" placeholder="Электронная почта" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="email2">
+														<input class="control" type="email" name="email2" id="email2" placeholder="Электронная почта" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="kpp" id="kpp" placeholder="КПП" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="kpp">
+														<input class="control" type="text" name="kpp" id="kpp" placeholder="КПП" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="password" name="password2" id="password2" placeholder="Пароль" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="password2">
+														<input class="control" type="password" name="password2" id="password2" placeholder="Пароль" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="bic" id="bic" placeholder="БИК" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="bic">
+														<input class="control" type="text" name="bic" id="bic" placeholder="БИК" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="password" name="repassword2" id="repassword2" placeholder="Повторите пароль" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="repassword2">
+														<input class="control" type="password" name="repassword2" id="repassword2" placeholder="Повторите пароль" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="korrBill" id="korrBill" placeholder="Корреспондентский счет" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="korrBill">
+														<input class="control" type="text" name="korrBill" id="korrBill" placeholder="Корреспондентский счет" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12"></div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="bill" id="bill" placeholder="Расчетный счет" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="bill">
+														<input class="control" type="text" name="bill" id="bill" placeholder="Расчетный счет" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12"></div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="legalBill" id="legalBill" placeholder="Юридический адрес" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="legalBill">
+														<input class="control" type="text" name="legalBill" id="legalBill" placeholder="Юридический адрес" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12"></div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="postAdr" id="postAdr" placeholder="Почтовый адрес" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="postAdr">
+														<input class="control" type="text" name="postAdr" id="postAdr" placeholder="Почтовый адрес" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12"></div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="director" id="director" placeholder="Руководитель" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="director">
+														<input class="control" type="text" name="director" id="director" placeholder="Руководитель" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12"></div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="act" id="act" placeholder="Действует на основании" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="act">
+														<input class="control" type="text" name="act" id="act" placeholder="Действует на основании" required="required" />
+													</label>
 												</div>
 												<div class="col col__md-6 col__xs-12"></div>
 												<div class="col col__md-6 col__xs-12">
-													<input class="control" type="text" name="state" id="state" placeholder="Должность руководителя" value="" required="required" onkeyup="this.setAttribute('value', this.value);" />
+													<label class="control-body" for="state">
+														<input class="control" type="text" name="state" id="state" placeholder="Должность руководителя" required="required" />
+													</label>
 												</div>
 											</div><a class="btn btn--info btn--full btn--icon franciscoItem" href="#">
 												<div class="franciscoHelper"><span>Зарегистрироваться</span><img src="assets/images/whiteRightAr.svg" alt="" />
@@ -318,7 +318,7 @@
 								</div>
 							</div>
 						</div>
-						<form class="section__bottom__form">
+						<form class="section__bottom__form sticky-stopper" data-aos="fade-up">
 							<div class="section__bottom__form__row">
 								<div class="section__bottom__title">Подпишись,<br />чтобы быть вкурсе дел</div>
 								<div class="section__bottom__form__col">
@@ -338,7 +338,9 @@
 							</div>
 							<div class="section__bottom__form__row">
 								<div class="section__bottom__form__input">
-									<input class="control" type="email" placeholder="Введите ваш E-mail" required="required" value="" onkeyup="this.setAttribute('value', this.value);" />
+									<label class="control-body" for="signForm">
+										<input class="control" type="email" id="signForm" placeholder="Введите ваш E-mail" required="required" />
+									</label>
 								</div>
 								<button class="section__bottom__form__button franciscoItem" type="submit">
 									<div class="franciscoHelper"><span>Подписаться на рассылку</span><img src="assets/images/str_white.svg" alt="" />
@@ -349,7 +351,7 @@
 					</div>
 				</div>
 				<div class="section__footer">
-					<footer class="footer">
+					<footer class="footer" data-aos="fade-up">
 						<div class="footer__row">
 							<div class="footer__col"><a class="footer__logo" href=""></a>
 								<div class="hidden__xs hidden__sm">

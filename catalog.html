@@ -48,53 +48,6 @@
 				</div>
 				<div class="loader-outer"></div>
 			</div>
-			<div class="mfp-hide white-popup-block popup-block" id="cdek">
-				<div class="row row-null">
-					<div class="col col__md-7 col__xs-12 relative">
-						<div class="icon-delete popup-modal-dismiss"></div>
-						<div class="popup-block-header">
-							<h4>Самовывоз из пункта выдачи CDEK (по предоплате)</h4>
-							<div><span class="text__lg">2 540 р.</span><span class="text__sm text--grey">~ через 6 дней (17.04)</span></div>
-						</div>
-						<div class="searchAdr">
-							<div class="searchAdr-field">
-								<input class="control" type="search" placeholder="Введите адрес офиса" />
-								<button><img src="assets/images/search_blue.svg" alt="" />
-								</button>
-							</div>
-							<div class="searchAdr-list scrollContent">
-								<div class="radio">
-									<input class="city" type="radio" id="point1" name="points" value="central" />
-									<label class="label" for="point1">Славянка, Колпинское шоссе, 38, м. Купчино</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point2" name="points" value="northwest" />
-									<label class="label" for="point2">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point3" name="points" value="south" />
-									<label class="label" for="point3">Славянка, Колпинское шоссе, 38, м. Купчино</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point4" name="points" value="volga" />
-									<label class="label" for="point4">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point5" name="points" value="ural" />
-									<label class="label" for="point5">Славянка, Колпинское шоссе, 38, м. Купчино</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point6" name="points" value="east" />
-									<label class="label" for="point6">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
-								</div>
-							</div><a class="btn btn--info btn--full btn--icon" href="#">Выбрать<img src="assets/images/whiteRightAr.svg" alt="" /></a>
-						</div>
-					</div>
-					<div class="col col__md-5 col__xs-12">
-						<div class="googleMap" id="googleMapsBlue"></div>
-					</div>
-				</div>
-			</div>
 			<div class="searchBar">
 				<div class="container">
 					<div class="searchBar__close"><img src="assets/images/close-wh.svg" alt="" /></div>
@@ -127,12 +80,12 @@
 				</div>
 				<div class="menuBar__close"><i class="icon icon_close"></i>Закрыть</div>
 				<div class="menuBar__content">
-					<div class="container"><a class="menuBar__logo hidden__xs hidden__sm visible__md visible__lg visible__xl" href="/"><img src="assets/images/logo_Lblue.svg" alt="" /></a>
+					<div class="container"><a class="menuBar__logo menuBar-item animated hidden__xs hidden__sm visible__md visible__lg visible__xl" href="/"><img src="assets/images/logo_Lblue.svg" alt="" /></a>
 						<div class="row between__xs">
-							<div class="col col__md-3 col__lg-3 col__xs-12">
+							<div class="col col__md-3 col__lg-3 col__xs-12 menuBar-item animated">
 								<div class="menuBar__list"><a class="menuBar__list__item" href="">Дилерам</a><a class="menuBar__list__item" href="">О компании</a><a class="menuBar__list__item" href="">Новости</a><a class="menuBar__list__item" href="">Акции</a><a class="menuBar__list__item" href="">Каталог</a><a class="menuBar__list__item" href="">Где купить</a><a class="menuBar__list__item" href="">Контакты</a><a class="menuBar__list__item" href="">Обратная связь</a></div>
 							</div>
-							<div class="col col__md-5 col__lg-6 col__xs-12">
+							<div class="col col__md-5 col__lg-6 col__xs-12 menuBar-item animated">
 								<div class="footer__title">Центральный офис</div>
 								<div class="footer__text">Россия, Воронеж,<br />ул. Новгородская, 121, оф. 1</div>
 								<div class="hidden__md">
@@ -146,7 +99,7 @@
 									<div class="footer__social"><a class="footer__social__item" href=""><i class="icon icon_fb"></i></a><a class="footer__social__item" href=""><i class="icon icon_vk"></i></a><a class="footer__social__item" href=""><i class="icon icon_yt"></i></a><a class="footer__social__item" href=""><i class="icon icon_inst"></i></a></div>
 								</div>
 							</div>
-							<div class="col col__md-4 col__lg-3 col__xs-12">
+							<div class="col col__md-4 col__lg-3 col__xs-12 menuBar-item animated">
 								<div class="visible__md visible__lg visible__xl hidden__xs hidden__sm">
 									<div class="menuBar__phone">+7 473 274-71-50</div>
 									<div class="footer__text">Многоканальный</div><br /><br />
@@ -196,12 +149,14 @@
 			</header>
 			<main class="page catalog">
 				<div class="section">
-					<div class="section__left">
+					<div class="section__left" data-aos="">
 						<div class="catalog-info">
 							<div class="cabinet">
-								<aside class="aside animated" data-animation="slideInLeft" data-animation-delay="500">
+								<aside class="aside" data-aos="fade-right" data-aos-delay="500">
 									<div class="filter">
-										<div class="filter-title filter-clicker active"><img src="assets/images/icons/filter.svg" alt="" /><span>Скрыть фильтры</span>
+										<div class="filter-title filter-clicker active franciscoItem">
+											<div class="franciscoHelper"><img src="assets/images/icons/filter.svg" alt="" /><span>Скрыть фильтры</span><img src="assets/images/icons/minus.svg" alt="" />
+											</div>
 										</div>
 										<div class="filter-list active">
 											<div class="filter-list-header filter-clicker active">Тип корпуса S (USP)</div>
@@ -238,35 +193,48 @@
 											</div><a class="btn btn--info btn--full btn--icon franciscoItem" href="#">
 												<div class="franciscoHelper"><span>Подобрать</span><img src="assets/images/whiteRightAr.svg" alt="" />
 												</div>
-											</a><a class="btn btn--default btn--full" href="#">Сбросить</a>
+											</a><a class="btn btn--default btn--full franciscoItem" href="#">
+												<div class="franciscoHelper">Сбросить</div>
+											</a>
 										</div>
 									</div>
 								</aside>
 								<div class="cabinet-content">
 									<div class="cabinet-content-inner">
 										<div class="mainTitle">
-											<h2 class="animated" data-animation="slideInDown" data-animation-delay="500">Специальная программа <br /> для сельхозтехники</h2>
-											<div class="breadLink animated" data-animation="slideInRight" data-animation-delay="600">Главная<span>Каталог /</span></div>
+											<h2 data-aos="fade-right" data-aos-delay="500">Специальная программа <br> для сельхозтехники</h2>
+											<div class="breadLink" data-aos="fade-left" data-aos-delay="600">Главная<span>Каталог /</span>
+											</div>
 										</div>
-										<ul class="catalog-nav animated" data-animation="slideInUp" data-animation-delay="700">
+										<ul class="catalog-nav" data-aos="fade-up" data-aos-delay="700">
 											<li><a href="#">Шариковые подшипники для сельльскохозяйственной техники <span>20</span></a></li>
 											<li><a href="#">Подшипники для отечественных производителей <span>50</span></a></li>
 											<li><a href="#">Подшипники для зарубежных производителей <span>70</span></a></li>
 											<li><a href="#">Сальники <span>10</span></a></li>
 										</ul>
-										<ul class="catalog-btn-nav animated" data-animation="slideInUp" data-animation-delay="800">
-											<li><a class="btn btn__sm" href="#">Подшипники для почвообрабатывающей техники</a></li>
-											<li><a class="btn btn__sm active" href="#">Подшипники для сеялки</a></li>
-											<li><a class="btn btn__sm" href="#">Подшипники для прикатывающих устройств</a></li>
-											<li><a class="btn btn__sm" href="#">Подшипники для комбайнов</a></li>
-											<li><a class="btn btn__sm" href="#">Подшипники для универсального применения</a></li>
+										<ul class="catalog-btn-nav" data-aos="fade-up" data-aos-delay="800">
+											<li><a class="btn btn__sm franciscoItem" href="#">
+													<div class="franciscoHelper">Подшипники для почвообрабатывающей техники</div>
+												</a></li>
+											<li><a class="btn btn__sm franciscoItem active" href="#">
+													<div class="franciscoHelper">Подшипники для сеялки</div>
+												</a></li>
+											<li><a class="btn btn__sm franciscoItem" href="#">
+													<div class="franciscoHelper">Подшипники для прикатывающих устройств</div>
+												</a></li>
+											<li><a class="btn btn__sm franciscoItem" href="#">
+													<div class="franciscoHelper">Подшипники для комбайнов</div>
+												</a></li>
+											<li><a class="btn btn__sm franciscoItem" href="#">
+													<div class="franciscoHelper">Подшипники для универсального применения</div>
+												</a></li>
 										</ul>
 									</div>
-									<div class="tabs animated" data-animation="slideInUp" data-animation-delay="900">
+									<div class="tabs" data-aos="fade-up" data-aos-delay="900">
 										<div class="tabs-list"><a class="tab active" href="#stage1">Ассортимент</a><a class="tab" href="#stage2">Описание</a></div>
 										<div class="tabs-content show" id="stage1">
 											<div class="catalog__inner">
-												<div class="catalog__item">
+												<div class="catalog__item" data-aos="fade-up">
 													<div class="card__item__inner">
 														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_1.png" alt="" /></div>
 														<div class="section__bottom__slider__item__tags">
@@ -276,9 +244,11 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
-												<div class="catalog__item">
+												<div class="catalog__item" data-aos="fade-up">
 													<div class="card__item__inner">
 														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_1.png" alt="" /></div>
 														<div class="section__bottom__slider__item__tags">
@@ -288,9 +258,11 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
-												<div class="catalog__item">
+												<div class="catalog__item" data-aos="fade-up">
 													<div class="card__item__inner">
 														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_1.png" alt="" /></div>
 														<div class="section__bottom__slider__item__tags">
@@ -300,9 +272,11 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
-												<div class="catalog__item">
+												<div class="catalog__item" data-aos="fade-up">
 													<div class="card__item__inner">
 														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_1.png" alt="" /></div>
 														<div class="section__bottom__slider__item__tags">
@@ -312,9 +286,11 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
-												<div class="catalog__item">
+												<div class="catalog__item" data-aos="fade-up">
 													<div class="card__item__inner">
 														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_1.png" alt="" /></div>
 														<div class="section__bottom__slider__item__tags">
@@ -324,9 +300,11 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
-												<div class="catalog__item">
+												<div class="catalog__item" data-aos="fade-up">
 													<div class="card__item__inner">
 														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_1.png" alt="" /></div>
 														<div class="section__bottom__slider__item__tags">
@@ -336,9 +314,11 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
-												<div class="catalog__item">
+												<div class="catalog__item" data-aos="fade-up">
 													<div class="card__item__inner">
 														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_1.png" alt="" /></div>
 														<div class="section__bottom__slider__item__tags">
@@ -348,9 +328,11 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
-												<div class="catalog__item">
+												<div class="catalog__item" data-aos="fade-up">
 													<div class="card__item__inner">
 														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_1.png" alt="" /></div>
 														<div class="section__bottom__slider__item__tags">
@@ -360,9 +342,11 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
-												<div class="catalog__item">
+												<div class="catalog__item" data-aos="fade-up">
 													<div class="card__item__inner">
 														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_1.png" alt="" /></div>
 														<div class="section__bottom__slider__item__tags">
@@ -372,7 +356,9 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
 											</div>
 										</div>
@@ -388,7 +374,9 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
 												<div class="catalog__item">
 													<div class="card__item__inner">
@@ -400,7 +388,9 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
 												<div class="catalog__item">
 													<div class="card__item__inner">
@@ -412,12 +402,14 @@
 														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
 														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
 														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</div><a class="btn btn--full btn--default" href="#">Добавить в корзину</a>
+													</div><a class="btn btn--full btn--default franciscoItem" href="#">
+														<div class="franciscoHelper">Добавить в корзину</div>
+													</a>
 												</div>
 											</div>
 										</div>
 									</div>
-									<ul class="pagination">
+									<ul class="pagination" data-aos="fade-up">
 										<li class="pagination__item franciscoItem"><a class="pagination__link franciscoLink" href="#">
 												<div class="franciscoHelper"><img src="assets/images/arrow-left--long-gr.svg" alt="" />
 												</div>
@@ -437,7 +429,7 @@
 								</div>
 							</div>
 						</div>
-						<form class="section__bottom__form">
+						<form class="section__bottom__form sticky-stopper" data-aos="fade-up">
 							<div class="section__bottom__form__row">
 								<div class="section__bottom__title">Подпишись,<br />чтобы быть вкурсе дел</div>
 								<div class="section__bottom__form__col">
@@ -457,7 +449,9 @@
 							</div>
 							<div class="section__bottom__form__row">
 								<div class="section__bottom__form__input">
-									<input class="control" type="email" placeholder="Введите ваш E-mail" required="required" value="" onkeyup="this.setAttribute('value', this.value);" />
+									<label class="control-body" for="signForm">
+										<input class="control" type="email" id="signForm" placeholder="Введите ваш E-mail" required="required" />
+									</label>
 								</div>
 								<button class="section__bottom__form__button franciscoItem" type="submit">
 									<div class="franciscoHelper"><span>Подписаться на рассылку</span><img src="assets/images/str_white.svg" alt="" />
@@ -468,7 +462,7 @@
 					</div>
 				</div>
 				<div class="section__footer">
-					<footer class="footer">
+					<footer class="footer" data-aos="fade-up">
 						<div class="footer__row">
 							<div class="footer__col"><a class="footer__logo" href=""></a>
 								<div class="hidden__xs hidden__sm">

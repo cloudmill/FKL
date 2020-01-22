@@ -48,53 +48,6 @@
 				</div>
 				<div class="loader-outer"></div>
 			</div>
-			<div class="mfp-hide white-popup-block popup-block" id="cdek">
-				<div class="row row-null">
-					<div class="col col__md-7 col__xs-12 relative">
-						<div class="icon-delete popup-modal-dismiss"></div>
-						<div class="popup-block-header">
-							<h4>Самовывоз из пункта выдачи CDEK (по предоплате)</h4>
-							<div><span class="text__lg">2 540 р.</span><span class="text__sm text--grey">~ через 6 дней (17.04)</span></div>
-						</div>
-						<div class="searchAdr">
-							<div class="searchAdr-field">
-								<input class="control" type="search" placeholder="Введите адрес офиса" />
-								<button><img src="assets/images/search_blue.svg" alt="" />
-								</button>
-							</div>
-							<div class="searchAdr-list scrollContent">
-								<div class="radio">
-									<input class="city" type="radio" id="point1" name="points" value="central" />
-									<label class="label" for="point1">Славянка, Колпинское шоссе, 38, м. Купчино</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point2" name="points" value="northwest" />
-									<label class="label" for="point2">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point3" name="points" value="south" />
-									<label class="label" for="point3">Славянка, Колпинское шоссе, 38, м. Купчино</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point4" name="points" value="volga" />
-									<label class="label" for="point4">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point5" name="points" value="ural" />
-									<label class="label" for="point5">Славянка, Колпинское шоссе, 38, м. Купчино</label>
-								</div>
-								<div class="radio">
-									<input class="city" type="radio" id="point6" name="points" value="east" />
-									<label class="label" for="point6">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
-								</div>
-							</div><a class="btn btn--info btn--full btn--icon" href="#">Выбрать<img src="assets/images/whiteRightAr.svg" alt="" /></a>
-						</div>
-					</div>
-					<div class="col col__md-5 col__xs-12">
-						<div class="googleMap" id="googleMapsBlue"></div>
-					</div>
-				</div>
-			</div>
 			<div class="searchBar">
 				<div class="container">
 					<div class="searchBar__close"><img src="assets/images/close-wh.svg" alt="" /></div>
@@ -127,12 +80,12 @@
 				</div>
 				<div class="menuBar__close"><i class="icon icon_close"></i>Закрыть</div>
 				<div class="menuBar__content">
-					<div class="container"><a class="menuBar__logo hidden__xs hidden__sm visible__md visible__lg visible__xl" href="/"><img src="assets/images/logo_Lblue.svg" alt="" /></a>
+					<div class="container"><a class="menuBar__logo menuBar-item animated hidden__xs hidden__sm visible__md visible__lg visible__xl" href="/"><img src="assets/images/logo_Lblue.svg" alt="" /></a>
 						<div class="row between__xs">
-							<div class="col col__md-3 col__lg-3 col__xs-12">
+							<div class="col col__md-3 col__lg-3 col__xs-12 menuBar-item animated">
 								<div class="menuBar__list"><a class="menuBar__list__item" href="">Дилерам</a><a class="menuBar__list__item" href="">О компании</a><a class="menuBar__list__item" href="">Новости</a><a class="menuBar__list__item" href="">Акции</a><a class="menuBar__list__item" href="">Каталог</a><a class="menuBar__list__item" href="">Где купить</a><a class="menuBar__list__item" href="">Контакты</a><a class="menuBar__list__item" href="">Обратная связь</a></div>
 							</div>
-							<div class="col col__md-5 col__lg-6 col__xs-12">
+							<div class="col col__md-5 col__lg-6 col__xs-12 menuBar-item animated">
 								<div class="footer__title">Центральный офис</div>
 								<div class="footer__text">Россия, Воронеж,<br />ул. Новгородская, 121, оф. 1</div>
 								<div class="hidden__md">
@@ -146,7 +99,7 @@
 									<div class="footer__social"><a class="footer__social__item" href=""><i class="icon icon_fb"></i></a><a class="footer__social__item" href=""><i class="icon icon_vk"></i></a><a class="footer__social__item" href=""><i class="icon icon_yt"></i></a><a class="footer__social__item" href=""><i class="icon icon_inst"></i></a></div>
 								</div>
 							</div>
-							<div class="col col__md-4 col__lg-3 col__xs-12">
+							<div class="col col__md-4 col__lg-3 col__xs-12 menuBar-item animated">
 								<div class="visible__md visible__lg visible__xl hidden__xs hidden__sm">
 									<div class="menuBar__phone">+7 473 274-71-50</div>
 									<div class="footer__text">Многоканальный</div><br /><br />
@@ -196,15 +149,14 @@
 			</header>
 			<main class="page mainCatalog">
 				<div class="section">
-					<div class="container">
-						<div class="mainTitle">
-							<h1 class="animated" data-animation="slideInDown" data-animation-delay="500">Каталог продукции</h1>
-							<div class="breadLink animated" data-animation="slideInRight" data-animation-delay="600">Главная</div>
+					<div class="section__left" data-aos="">
+						<div class="mainTitle mainTitle--subNav">
+							<h1 data-aos="fade-right" data-aos-delay="500">Каталог продукции</h1>
+							<div class="breadLink" data-aos="fade-left" data-aos-delay="600">Главная /
+							</div>
 						</div>
-					</div>
-					<div class="section__left">
 						<div class="mainCatalog-info">
-							<div class="clients-links animated" data-animation="slideInUp" data-animation-delay="700"><a class="about__card__bottom franciscoItem" href="#">
+							<div class="clients-links" data-aos="fade-up" data-aos-delay="700"><a class="about__card__bottom franciscoItem" href="#">
 									<div class="franciscoHelper"><img src="assets/images/download.svg" alt="" />
 										<p>Скачать каталог в .PDF&nbsp;<span class="text__sm text--grey">(3 мб)</span></p>
 									</div>
@@ -213,7 +165,7 @@
 										<p>Скачать каталог в .XLSX&nbsp;<span class="text__sm text--grey">(3 мб)</span></p>
 									</div>
 								</a></div>
-							<div class="row row-null animated" data-animation="slideInUp" data-animation-delay="800">
+							<div class="row row-null" data-aos="fade-up" data-aos-delay="800">
 								<div class="col col__md-6 col__xs-12 mainCatalog-desc">
 									<div class="text__lg">Если вы не знаете, какой подшипник вам нужен, то оставьте заявку и наш менеджер вам поможем с подбором</div>
 								</div>
@@ -226,13 +178,13 @@
 										</div>
 									</a></div>
 							</div>
-							<div class="catalogMenu animated" data-animation="slideInUp" data-animation-delay="900">
-								<div class="catalogMenu__item">
+							<div class="catalogMenu" data-aos="fade-up" data-aos-delay="900">
+								<div class="catalogMenu__item" data-aos="fade-up">
 									<div class="catalogMenu__item-title"><a href="#">Ступицы</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Для посвеной техники</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Для почвообрабатывающей техники</a></div>
 								</div>
-								<div class="catalogMenu__item">
+								<div class="catalogMenu__item" data-aos="fade-up">
 									<div class="catalogMenu__item-title"><a href="#">Шариковые подшипники</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Спцепрограмма для сельхоз техники</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Самоустанавливающиеся</a></div>
@@ -240,40 +192,41 @@
 									<div class="catalogMenu__item-link"><a href="#">Двухрядные</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Двухрядные Радиально-упорные</a></div>
 								</div>
-								<div class="catalogMenu__item">
+								<div class="catalogMenu__item" data-aos="fade-up">
 									<div class="catalogMenu__item-title"><a href="#">Подшипниковые узлы</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Высокопрочный чугунный корпус</a></div>
 									<div class="catalogMenu__item-link"><a href="#">В сером чугунном корпусе</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Стальной корпус</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Для дисковых борон</a></div>
 								</div>
-								<div class="catalogMenu__item">
+								<div class="catalogMenu__item" data-aos="fade-up">
 									<div class="catalogMenu__item-title"><a href="#">Корпуса для подшипников</a></div>
 									<div class="catalogMenu__item-link"><a href="#">В чугунном корпусе</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Стальной корпус</a></div>
 								</div>
-								<div class="catalogMenu__item">
+								<div class="catalogMenu__item" data-aos="fade-up">
 									<div class="catalogMenu__item-title"><a href="#">Карданные валы</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Для сельхозтехники</a></div>
 									<div class="catalogMenu__item-link"><a href="#">Для промышленности</a></div>
 								</div>
-								<div class="catalogMenu__item">
+								<div class="catalogMenu__item" data-aos="fade-up">
 									<div class="catalogMenu__item-title"><a href="#">Крестовины</a></div>
 								</div>
-								<div class="catalogMenu__item">
+								<div class="catalogMenu__item" data-aos="fade-up">
 									<div class="catalogMenu__item-title"><a href="#">Закрепительные втулки</a></div>
 								</div>
-								<div class="catalogMenu__item">
+								<div class="catalogMenu__item" data-aos="fade-up">
 									<div class="catalogMenu__item-title"><a href="#">Акссесуары</a></div>
 								</div>
-								<div class="catalogMenu__item">
+								<div class="catalogMenu__item" data-aos="fade-up">
 									<div class="catalogMenu__item-title"><a href="#">Полезная литература</a></div>
 								</div>
 							</div>
-						</div><a class="nextBlock nextBlock--short" href="#"><span class="nextBlock__inner">
-								<h2>База знаний по подшипникам</h2><span></span>
+						</div><a class="nextBlock nextBlock--short franciscoItem" href="#" data-aos="fade-up"><span class="nextBlock__inner">
+								<h2>База знаний по подшипникам</h2>
+								<div class="franciscoHelper"><span></span></div>
 							</span></a>
-						<form class="section__bottom__form">
+						<form class="section__bottom__form sticky-stopper" data-aos="fade-up">
 							<div class="section__bottom__form__row">
 								<div class="section__bottom__title">Подпишись,<br />чтобы быть вкурсе дел</div>
 								<div class="section__bottom__form__col">
@@ -293,7 +246,9 @@
 							</div>
 							<div class="section__bottom__form__row">
 								<div class="section__bottom__form__input">
-									<input class="control" type="email" placeholder="Введите ваш E-mail" required="required" value="" onkeyup="this.setAttribute('value', this.value);" />
+									<label class="control-body" for="signForm">
+										<input class="control" type="email" id="signForm" placeholder="Введите ваш E-mail" required="required" />
+									</label>
 								</div>
 								<button class="section__bottom__form__button franciscoItem" type="submit">
 									<div class="franciscoHelper"><span>Подписаться на рассылку</span><img src="assets/images/str_white.svg" alt="" />
@@ -304,7 +259,7 @@
 					</div>
 				</div>
 				<div class="section__footer">
-					<footer class="footer">
+					<footer class="footer" data-aos="fade-up">
 						<div class="footer__row">
 							<div class="footer__col"><a class="footer__logo" href=""></a>
 								<div class="hidden__xs hidden__sm">
