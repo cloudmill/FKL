@@ -39,7 +39,7 @@
 		<link href="assets/app.css" rel="stylesheet">
 	</head>
 
-	<body class="bodyinvoice" style="overflow: hidden">
+	<body class="bodycatalog" style="overflow: hidden">
 		<!--[if lt IE 9]>
 <p class="browsehappy">Данный сайт построен на передовых, современных технологиях и не поддерживает Ваш браузер. Настоятельно рекомендуем выбрать и установить любой из &nbsp;<a href="http://browsehappy.com/" target="_blank">современных браузеров.</a> Это бесплатно и займет всего несколько минут.</p><![endif]-->
 		<div class="wrapper">
@@ -190,22 +190,156 @@
 					</div>
 				</div>
 			</header>
-			<main class="page invoice">
+			<main class="page catalog">
 				<div class="section">
 					<div class="section__left" data-aos="">
-						<div class="invoice-info">
-							<div class="container">
-								<div class="mainTitle">
-									<h2 data-aos="fade-right" data-aos-delay="500">Ваш счет</h2>
-									<div class="breadLink" data-aos="fade-left" data-aos-delay="600"><a href="/">Главная</a><span>Ваш счет /</span>
+						<div class="catalog-info">
+							<div class="cabinet">
+								<aside class="aside" data-aos="fade-right" data-aos-delay="500">
+									<div class="filter">
+										<div class="filter-title filter-clicker active franciscoItem">
+											<div class="franciscoHelper"><img src="assets/images/icons/filter.svg" alt="" /><span>Скрыть фильтры</span><img src="assets/images/icons/minus.svg" alt="" />
+											</div>
+										</div>
+										<div class="filter-list active">
+											<div class="filter-list-header filter-clicker active">Тип корпуса S (USP)</div>
+											<div class="filter-list-body active">
+												<div class="filter-list__item">
+													<label>Определите цену</label>
+													<div id="range"></div>
+													<div class="input-group">
+														<input class="control control--border" id="skip-value-lower" type="text" /><span>—</span>
+														<input class="control control--border" id="skip-value-upper" type="text" /><span>р.</span>
+													</div>
+												</div>
+												<div class="filter-list__item">
+													<label>Выберите диапазон (мм)</label>
+													<div class="input-group">
+														<input class="control control--border" type="number" /><span>≤d≤</span>
+														<input class="control control--border" type="number" />
+													</div>
+												</div>
+												<div class="filter-list__item">
+													<label>Расстояние между отверстиями (мм)</label>
+													<div class="input-group">
+														<input class="control control--border" type="number" /><span>≤S≤</span>
+														<input class="control control--border" type="number" />
+													</div>
+												</div>
+												<div class="filter-list__item">
+													<label>Наружный диаметр (мм)</label>
+													<div class="input-group">
+														<input class="control control--border" type="number" /><span>≤D≤</span>
+														<input class="control control--border" type="number" />
+													</div>
+												</div>
+											</div><a class="btn btn--info btn--full btn--icon franciscoItem" href="#">
+												<div class="franciscoHelper"><span>Подобрать</span><img src="assets/images/whiteRightAr.svg" alt="" />
+												</div>
+											</a><a class="btn btn--default btn--full franciscoItem" href="#">
+												<div class="franciscoHelper">Сбросить</div>
+											</a>
+										</div>
+									</div>
+								</aside>
+								<div class="cabinet-content">
+									<div class="cabinet-content-inner">
+										<div class="mainTitle">
+											<h2 data-aos="fade-right" data-aos-delay="500">Специальная программа <br> для сельхозтехники</h2>
+											<div class="breadLink" data-aos="fade-left" data-aos-delay="600"><a href="/">Главная</a><span>Каталог /</span>
+											</div>
+										</div>
+										<ul class="catalog-nav" data-aos="fade-up" data-aos-delay="700">
+											<li><a href="#">Шариковые подшипники для сельльскохозяйственной техники <span>20</span></a></li>
+											<li><a href="#">Подшипники для отечественных производителей <span>50</span></a></li>
+											<li><a href="#">Подшипники для зарубежных производителей <span>70</span></a></li>
+											<li><a href="#">Сальники <span>10</span></a></li>
+										</ul>
+										<ul class="catalog-btn-nav" data-aos="fade-up" data-aos-delay="800">
+											<li><a class="btn btn__sm franciscoItem" href="#">
+													<div class="franciscoHelper">Подшипники для почвообрабатывающей техники</div>
+												</a></li>
+											<li><a class="btn btn__sm franciscoItem active" href="#">
+													<div class="franciscoHelper">Подшипники для сеялки</div>
+												</a></li>
+											<li><a class="btn btn__sm franciscoItem" href="#">
+													<div class="franciscoHelper">Подшипники для прикатывающих устройств</div>
+												</a></li>
+											<li><a class="btn btn__sm franciscoItem" href="#">
+													<div class="franciscoHelper">Подшипники для комбайнов</div>
+												</a></li>
+											<li><a class="btn btn__sm franciscoItem" href="#">
+													<div class="franciscoHelper">Подшипники для универсального применения</div>
+												</a></li>
+										</ul>
+									</div>
+									<div class="tabs" data-aos="fade-up" data-aos-delay="900">
+										<div class="tabs-list"><a class="tab active" href="#stage1">Ассортимент</a><a class="tab" href="#stage2">Описание</a></div>
+										<div class="tabs-content show" id="stage1">
+											<div class="cap__inner">
+												<h5>Товар доступен только под заказ от 2000 позиций</h5>
+												<p>Чтобы узнать стоимость и сроки изготовлении, оставьте заявку, позвоните или напишите на почту.</p>
+												<div class="row between__xs">
+													<div class="contacts-list col col__md-6 col__xs-12" data-aos="fade-up" data-aos-delay="900">
+														<div class="contacts-list__ico"><img src="assets/images/contacts/phone.svg" alt="" />
+														</div>
+														<div class="contacts-list__desc">
+															<h5><a href="tel:84732110550">8 473 211-05-50</a></h5>
+															<p class="text--grey text__sm">(многоканальный)</p>
+														</div>
+													</div>
+													<div class="contacts-list col col__md-6 col__xs-12" data-aos="fade-up" data-aos-delay="1000">
+														<div class="contacts-list__ico"><img src="assets/images/contacts/envelope.svg" alt="" />
+														</div>
+														<div class="contacts-list__desc">
+															<h5><a href="mailto:mail@rusfkl.ru">mail@rusfkl.ru</a></h5>
+														</div>
+													</div>
+												</div>
+												<form data-aos="fade-up">
+													<div class="row">
+														<div class="col col__md-6 col__xs-12 form__group">
+															<label class="control-body" for="name">
+																<input class="control" type="text" name="name" id="name" placeholder="Ваше имя" required="required" />
+															</label>
+														</div>
+														<div class="col col__md-6 col__xs-12 form__group">
+															<label class="control-body" for="phone">
+																<input class="control" type="text" name="phone" id="phone" placeholder="Телефон" required="required" />
+															</label>
+														</div>
+														<div class="col col__xs-12 form__group"><a class="btn btn--info btn--full btn--icon franciscoItem" href="#">
+																<div class="franciscoHelper"><span>Отправить</span><img src="assets/images/whiteRightAr.svg" alt="" />
+																</div>
+															</a></div>
+														<div class="col col__xs-12 form__group checkbox">
+															<input id="agreement" type="checkbox" name="agreement" />
+															<label class="label" for="agreement"><span>Согласен на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности.</a></span></label>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+										<div class="tabs-content" id="stage2">
+											<div class="cap__inner">
+												<h5>Товар доступен только под заказ от 2000 позиций</h5>
+											</div>
+										</div>
+									</div>
+									<div class="cap__desc">
+										<h5>Подборки</h5>
+										<ul class="catalog-nav" data-aos="fade-up">
+											<li><a href="#">Подшипники Lemken</a></li>
+											<li><a href="#">Подшипники case</a></li>
+											<li><a href="#">Подшипники Claas</a></li>
+											<li><a href="#">Подшипники Shtern</a></li>
+											<li><a href="#">Подшипники John Deere</a></li>
+											<li><a href="#">Подшипники Lemken</a></li>
+											<li><a href="#">Подшипники US</a></li>
+										</ul>
 									</div>
 								</div>
 							</div>
-							<div class="invoice-inner" data-aos="fade-up" data-aos-delay="300"><a class="about__card__bottom franciscoItem" href="#">
-									<div class="franciscoHelper"><img src="assets/images/download.svg" alt="" />
-										<p>Скачать счет в .PDF</p>
-									</div>
-								</a></div>
 						</div>
 						<form class="section__bottom__form sticky-stopper" data-aos="fade-up">
 							<div class="section__bottom__form__row">
