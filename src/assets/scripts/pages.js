@@ -204,10 +204,12 @@ $("#passwords--js").click(function() {
 // testing actions
 // TODO: add backend part and update this functions
 $(".testAction").click(function() {
-  $('form').hide();
+  $('#editPassword').hide();
+  $('#restorePassword').hide();
   $('.longLink').hide();
   $('.infoNotice').show();
   $('.mainTitle h2').text('Спасибо!');
+  AOS.init();
   return false;
 });
 $("#restoreForms").click(function() {
@@ -215,6 +217,15 @@ $("#restoreForms").click(function() {
   $('.longLink').show();
   $('.infoNotice').hide();
   $('.mainTitle h2').text('Изменить пароль');
+  AOS.init();
+  return false;
+});
+$("#restoreForms2").click(function() {
+  $('#restorePassword').show();
+  $('.longLink').show();
+  $('.infoNotice').hide();
+  $('.mainTitle h2').text('Восстановить пароль');
+  AOS.init();
   return false;
 });
 // testing actions

@@ -116,6 +116,7 @@ input[type="checkbox"]:focus {
         box-shadow: inset 0px 0px 0px 1px $color-type-2a;
       }
       input {
+        color: $color-type-2a;
         background-image: url(../images/close.svg);
         background-position: center right 20px;
         background-repeat: no-repeat;

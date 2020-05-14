@@ -39,7 +39,7 @@
 		<link href="assets/app.css" rel="stylesheet">
 	</head>
 
-	<body class="bodylogin" style="overflow: hidden">
+	<body class="bodyeditPassword" style="overflow: hidden">
 		<!--[if lt IE 9]>
 <p class="browsehappy">Данный сайт построен на передовых, современных технологиях и не поддерживает Ваш браузер. Настоятельно рекомендуем выбрать и установить любой из &nbsp;<a href="http://browsehappy.com/" target="_blank">современных браузеров.</a> Это бесплатно и займет всего несколько минут.</p><![endif]-->
 		<div class="wrapper">
@@ -226,178 +226,48 @@
 					</div>
 				</div>
 			</header>
-			<main class="page login">
+			<main class="page editPassword">
 				<div class="section">
-					<div class="section__left" data-aos="">
-						<div class="login-info">
-							<div class="container">
-								<div class="mainTitle">
-									<h1 data-aos="fade-right" data-aos-delay="500">Личный кабинет</h1>
-									<div class="breadLink" data-aos="fade-left" data-aos-delay="600"><a href="/">Главная</a><span>Личный кабинет /</span>
-									</div>
-								</div>
+					<div class="container">
+						<div class="mainTitle">
+							<h2 data-aos="fade-right" data-aos-delay="500">Восстановить пароль</h2>
+							<div class="breadLink" data-aos="fade-left" data-aos-delay="600"><a href="/">Главная</a><span>Личный кабинет /</span>
 							</div>
-							<div class="tabs" data-aos="fade-up" data-aos-delay="700">
-								<div class="tabs-list"><a class="tab active" href="#stage1">Есть аккаунт</a><a class="tab" href="#stage2">Регистрация</a></div>
-								<div class="tabs-content show" id="stage1">
-									<div class="regForm-error"></div>
-									<form class="regForm" method="POST" action="">
-										<div class="row row-null">
-											<div class="col col__md-6 col__xs-12">
-												<label class="control-body" for="email">
-													<input class="control" type="email" name="email" id="email" placeholder="Электронная почта" required="required" />
-												</label>
-											</div>
-											<div class="col col__md-6 col__xs-12">
-												<label class="control-body" for="password">
-													<input class="control" type="password" name="password" id="password" placeholder="Пароль" required="required" />
-												</label>
-											</div>
-										</div>
-										<div class="forgot-pass"><a href="#">Забыли пароль?</a></div><a class="btn btn--info btn--full btn--icon franciscoItem submit--js" href="#">
-											<div class="franciscoHelper"><span>Войти</span><img src="assets/images/whiteRightAr.svg" alt="" />
-											</div>
-										</a>
-									</form>
-								</div>
-								<div class="tabs-content" id="stage2">
-									<div class="registr-info">
-										<div class="login-chk">
-											<div class="checkbox">
-												<input id="legal" type="checkbox" name="legal" checked="checked" />
-												<label class="label" for="legal">Я юридическое лицо или ИП</label>
-											</div>
-										</div>
-										<form class="regForm" method="POST" action="">
-											<div class="row row-null" id="resident" style="display:none">
-												<div class="col col__xs-12">
-													<label class="control-body" for="name">
-														<input class="control" type="text" name="name" id="name" placeholder="Ваше имя" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="phone">
-														<input class="control" type="text" name="phone" id="phone" placeholder="Номер телефона" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="email1">
-														<input class="control" type="email" name="email1" id="email1" placeholder="Электронная почта" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="password1">
-														<input class="control" type="password" name="password1" id="password1" placeholder="Пароль" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="repassword1">
-														<input class="control" type="password" name="repassword1" id="repassword1" placeholder="Повторите пароль" required="required" />
-													</label>
-												</div>
-											</div>
-											<div class="row row-null" id="professional">
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="name2">
-														<input class="control" type="text" name="name2" id="name2" placeholder="Ваше имя" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="company">
-														<input class="control" type="text" name="company" id="company" placeholder="Название компании" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="phone2">
-														<input class="control" type="text" name="phone2" id="phone2" placeholder="Номер телефона" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="inn">
-														<input class="control" type="text" name="inn" id="inn" placeholder="ИНН" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="email2">
-														<input class="control" type="email" name="email2" id="email2" placeholder="Электронная почта" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="kpp">
-														<input class="control" type="text" name="kpp" id="kpp" placeholder="КПП" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="password2">
-														<input class="control" type="password" name="password2" id="password2" placeholder="Пароль" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="bic">
-														<input class="control" type="text" name="bic" id="bic" placeholder="БИК" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="repassword2">
-														<input class="control" type="password" name="repassword2" id="repassword2" placeholder="Повторите пароль" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="korrBill">
-														<input class="control" type="text" name="korrBill" id="korrBill" placeholder="Корреспондентский счет" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12"></div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="bill">
-														<input class="control" type="text" name="bill" id="bill" placeholder="Расчетный счет" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12"></div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="legalBill">
-														<input class="control" type="text" name="legalBill" id="legalBill" placeholder="Юридический адрес" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12"></div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="postAdr">
-														<input class="control" type="text" name="postAdr" id="postAdr" placeholder="Почтовый адрес" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12"></div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="director">
-														<input class="control" type="text" name="director" id="director" placeholder="Руководитель" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12"></div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="act">
-														<input class="control" type="text" name="act" id="act" placeholder="Действует на основании" required="required" />
-													</label>
-												</div>
-												<div class="col col__md-6 col__xs-12"></div>
-												<div class="col col__md-6 col__xs-12">
-													<label class="control-body" for="state">
-														<input class="control" type="text" name="state" id="state" placeholder="Должность руководителя" required="required" />
-													</label>
-												</div>
-											</div><a class="btn btn--info btn--full btn--icon franciscoItem" href="#">
-												<div class="franciscoHelper"><span>Зарегистрироваться</span><img src="assets/images/whiteRightAr.svg" alt="" />
-												</div>
-											</a>
-											<div class="regForm-chk">
-												<div class="checkbox">
-													<input id="agreement" type="checkbox" name="agreement" />
-													<label class="label" for="agreement"><span>Нажимая на кнопку «Зарегистрироваться», вы соглашаетесь на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности.</a></span></label>
+						</div>
+					</div>
+					<div class="editPassword-info">
+						<div class="cabinet">
+							<div class="cabinet-content">
+								<div class="cabinet-content-inner">
+									<div data-aos="fade-up" data-aos-delay="700">
+										<form class="editPassword-form basicControl margbot50" id="restorePassword" method="POST">
+											<div class="row">
+												<div class="col col__lg-6 col__md-10 col__xs-12">
+													<div class="form__group">
+														<label class="control-body" for="email">
+															<input class="control" type="email" name="email" id="email" placeholder="Электронная почта" required="required" />
+														</label>
+													</div>
+													<button class="btn btn--info btn--full testAction franciscoItem" type="submit">
+														<div class="franciscoHelper">Восстановить пароль</div>
+													</button>
 												</div>
 											</div>
 										</form>
+										<div class="infoNotice">
+											<h5>Мы выслали ссылку для восстановления пароля <br /> на ваш почтовый ящик</h5>
+											<div class="row">
+												<div class="col col__md-6 col__xs-12"><a class="btn btn--info btn--full franciscoItem" id="restoreForms2" href="#">
+														<div class="franciscoHelper">Понятно</div>
+													</a></div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="section__left solo" data-aos="">
 						<form class="section__bottom__form sticky-stopper" data-aos="fade-up">
 							<div class="section__bottom__form__row">
 								<div class="section__bottom__title">Подпишись,<br />чтобы быть вкурсе дел</div>
