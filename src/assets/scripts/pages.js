@@ -230,6 +230,16 @@ $("#restoreForms2").click(function() {
 });
 // testing actions
 
+$(".faq-form__right .btn--primary").click(function() {
+  $('.inner').slideDown();
+  $('.outer').hide();
+  return false;
+});
+$(".faq-form__right .return--js").click(function() {
+  $('.inner').hide();
+  $('.outer').slideDown();
+  return false;
+});
 
 // mask phone {maskedinput}
 $("[name=phone]").mask("+7 (999) 999-9999");

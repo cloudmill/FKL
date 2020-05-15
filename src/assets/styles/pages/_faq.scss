@@ -57,6 +57,12 @@
       @media screen and (min-width: $screen-xl-min) {
         padding: 130px 140px 100px;
       }
+      .inner {
+        display: none;
+        h3 {
+          margin: 150px 0;
+        }
+      }
     }
 
     .checkbox {

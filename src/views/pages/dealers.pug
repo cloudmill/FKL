@@ -206,15 +206,20 @@ block content
             +img('contacts/phone.svg')
             a(href='tel:84732110550'): span 8 473 211-05-50
         form.faq-form__right(data-aos="fade-left")
-          .form__group: +fieldInput('text', 'name', '', 'Ваше имя', true)
-          .form__group: +fieldInput('email', 'email', '', 'Электронная почта', true)
-          .form__group: +fieldTextarea('message', '', 'Ваш вопрос', '5', false)
-          .form__group
-            a.btn.btn--primary.btn--full(href='#'): span Отправить заявку на получение статуса дилера
-          .form__group
-            .checkbox
-              input(type="checkbox", id='faqId')
-              label.label(for='faqId') Нажимая на кнопку «Задать вопрос», вы соглашаетесь на обработку персональных данных в соответствии с #[a(href='#') политикой конфиденциальности].
+          .inner.text--center
+            h3 Спасибо, мы с Вами #[br] свяжемся
+            .form__group
+              a.btn.btn--primary.btn--full.return--js(href='#'): span Задать ещё вопрос
+          .outer
+            .form__group: +fieldInput('text', 'name', '', 'Ваше имя', true)
+            .form__group: +fieldInput('email', 'email', '', 'Электронная почта', true)
+            .form__group: +fieldTextarea('message', '', 'Ваш вопрос', '5', false)
+            .form__group
+              a.btn.btn--primary.btn--full(href='#'): span Отправить заявку на получение статуса дилера
+            .form__group
+              .checkbox
+                input(type="checkbox", id='faqId')
+                label.label(for='faqId') Нажимая на кнопку «Задать вопрос», вы соглашаетесь на обработку персональных данных в соответствии с #[a(href='#') политикой конфиденциальности].
       +nextBlock('Дилерам')
       include ../components/_signForm
 
