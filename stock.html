@@ -57,8 +57,96 @@
 					</form>
 				</div>
 			</div>
-			<div class="sitebar" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
-				<div class="sitebar-inner">
+			<div class="mfp-hide popup-block zoom-anim-dialog" id="cdek">
+				<div class="row row-null">
+					<div class="col col__md-7 col__xs-12 relative">
+						<div class="icon-delete popup-modal-dismiss"></div>
+						<div class="popup-block-header">
+							<h4>Самовывоз из пункта выдачи CDEK <br> (по предоплате)</h4>
+							<div><b class="text__lg">2 540 р.</b><span class="text__sm text--grey">~ через 6 дней (17.04)</span></div>
+						</div>
+						<div class="searchAdr">
+							<div class="searchAdr-field">
+								<input class="control" type="search" placeholder="Введите адрес офиса">
+								<button><img src="assets/images/search_blue.svg" alt="" />
+								</button>
+							</div>
+							<div class="searchAdr-list scrollContent">
+								<div class="radio">
+									<input class="city" type="radio" id="point1" name="points" value="central">
+									<label class="label" for="point1">Славянка, Колпинское шоссе, 38, м. Купчино</label>
+								</div>
+								<div class="radio">
+									<input class="city" type="radio" id="point2" name="points" value="northwest">
+									<label class="label" for="point2">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
+								</div>
+								<div class="radio">
+									<input class="city" type="radio" id="point3" name="points" value="south">
+									<label class="label" for="point3">Славянка, Колпинское шоссе, 38, м. Купчино</label>
+								</div>
+								<div class="radio">
+									<input class="city" type="radio" id="point4" name="points" value="volga">
+									<label class="label" for="point4">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
+								</div>
+								<div class="radio">
+									<input class="city" type="radio" id="point5" name="points" value="ural">
+									<label class="label" for="point5">Славянка, Колпинское шоссе, 38, м. Купчино</label>
+								</div>
+								<div class="radio">
+									<input class="city" type="radio" id="point6" name="points" value="east">
+									<label class="label" for="point6">ул. Брянцева, 20 1, литера А, 23Н, м. Гражданский проспект</label>
+								</div>
+							</div><a class="btn btn--info btn--full btn--icon franciscoItem" href="#">
+								<div class="franciscoHelper">Выбрать<img src="assets/images/whiteRightAr.svg" alt="" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col col__md-5 col__xs-12">
+						<div class="googleMap" id="googleMapsBlue"></div>
+					</div>
+				</div>
+			</div>
+			<div class="mfp-hide popup-block zoom-anim-dialog" id="call">
+				<div class="popup-inner">
+					<div class="icon-delete popup-modal-dismiss"></div>
+					<form class="faq-form__right">
+						<div class="inner text--center">
+							<h4>Спасибо, мы обязательно <br> перезвоним</h4>
+							<div class="form__group"><a class="btn btn--primary btn--full return--js" href="#"><span>Запросить еще раз</span></a></div>
+						</div>
+						<div class="outer">
+							<div class="form__group">
+								<label class="control-body" for="name">
+									<input class="control" type="text" name="name" id="name" placeholder="Ваше имя" required="required" />
+								</label>
+							</div>
+							<div class="form__group">
+								<label class="control-body" for="phone2">
+									<input class="control" type="text" name="phone" id="phone2" placeholder="Ваш номер телефона" required="required" />
+								</label>
+							</div>
+							<div class="form__group">
+								<label class="control-body" for="message">
+									<textarea class="control" name="message" id="message" placeholder="Комментарий" rows="5"></textarea>
+								</label>
+							</div>
+							<div class="row">
+								<div class="col col__lg-6 col__xs-12 form__group"><a class="btn btn--primary btn--full" href="#"><span>Задать вопрос</span></a></div>
+								<div class="col col__lg-6 col__xs-12 first__xs last__lg form__group">
+									<div class="checkbox">
+										<input type="checkbox" id="faqId">
+										<label class="label" for="faqId">Нажимая на кнопку «Задать вопрос», вы соглашаетесь на обработку персональных данных в соответствии с <a href="assets/files/conf.pdf" target="_blank">политикой конфиденциальности</a>.</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="addElement">Добавлено</div>
+			<div class="sitebar">
+				<div class="sitebar-inner" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
 					<div class="sitebar__sect">
 						<div class="sitebar__link"><i class="icon icon_selection"></i>Подбор</div>
 					</div>
@@ -318,7 +406,8 @@
 								<div>
 									<div class="footer__title open--js">Склад</div>
 									<div class="footer-inner">
-										<div class="footer__text">с. Бабяково, Новоусманского района, ул. Индустриальная, 61в<br><br>10 км от г. Воронежа съезд с М-4 на Тамбов (А-144). Индустриальный Парк «ПЕРСПЕКТИВА»</div><a class="footer__copy hidden__xs hidden__sm franciscoItem" href="#"><span class="franciscoHelper">Политика конфицендиальности</span></a>
+										<div class="footer__text">с. Бабяково, Новоусманского района, ул. Индустриальная, 61в<br><br>10 км от г. Воронежа съезд с М-4 на Тамбов (А-144). Индустриальный Парк «ПЕРСПЕКТИВА»</div>
+										<div class="user-links"><a class="footer__copy hidden__xs hidden__sm franciscoItem" href="assets/files/user.pdf" target="_blank"><span class="franciscoHelper">Условия пользовательского соглашения</span></a><a class="footer__copy hidden__xs hidden__sm franciscoItem" href="assets/files/offer.pdf" target="_blank"><span class="franciscoHelper">Публичная оферта</span></a><a class="footer__copy hidden__xs hidden__sm franciscoItem" href="assets/files/conf.pdf" target="_blank"><span class="franciscoHelper">Политика конфицендиальности</span></a></div>
 									</div>
 								</div>
 							</div>
@@ -342,7 +431,7 @@
 									<div class="footer__social"><a class="footer__social__item" href=""><i class="icon icon_fb"></i></a><a class="footer__social__item" href=""><i class="icon icon_vk"></i></a><a class="footer__social__item" href=""><i class="icon icon_yt"></i></a><a class="footer__social__item" href=""><i class="icon icon_inst"></i></a></div>
 								</div><a class="footer__download" href="">Скачать презентацию<span>PDF</span></a>
 								<div class="hidden__md hidden__lg hidden__xl">
-									<div class="footer__copy">© 2019 «FKL»</div><a class="footer__copy franciscoItem" href="#"><span class="franciscoHelper">Политика конфицендиальности Политика конфицендиальности</span></a>
+									<div class="footer__copy">© 2019 «FKL»</div><a class="footer__copy franciscoItem" href="assets/files/user.pdf" target="_blank"><span class="franciscoHelper">Условия пользовательского соглашения</span></a><a class="footer__copy franciscoItem" href="assets/files/offer.pdf" target="_blank"><span class="franciscoHelper">Публичная оферта</span></a><a class="footer__copy franciscoItem" href="assets/files/conf.pdf" target="_blank"><span class="franciscoHelper">Политика конфицендиальности</span></a>
 								</div>
 								<div class="footer__copy"><a href=""><img src="assets/images/cloudmillF.svg" alt=""></a></div>
 							</div>
