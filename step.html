@@ -199,7 +199,7 @@
 								<div class="footer__text">с. Бабяково, Новоусманского района,<br>ул. Индустриальная, 61в<br><br>10 км от г. Воронежа съезд с М-4<br>на Тамбов (А-144).<br>Индустриальный Парк «ПЕРСПЕКТИВА»<br>GPS: 51.707907, 39.455410</div>
 								<div class="footer__row middle__xs between__xs">
 									<div class="menuBar__title">Мы в соц. сетях</div>
-									<div class="footer__social"><a class="footer__social__item" href=""><i class="icon icon_fb"></i></a><a class="footer__social__item" href=""><i class="icon icon_vk"></i></a><a class="footer__social__item" href=""><i class="icon icon_yt"></i></a><a class="footer__social__item" href=""><i class="icon icon_inst"></i></a></div>
+									<div class="footer__social"><a class="footer__social__item" href="https://www.facebook.com/FKL-702336480212861/"><i class="icon icon_fb"></i></a><a class="footer__social__item" href="https://vk.com/fklrussia"><i class="icon icon_vk"></i></a><a class="footer__social__item" href="https://www.youtube.com/user/SergeyFKL"><i class="icon icon_yt"></i></a></div>
 								</div>
 							</div>
 							<div class="col col__md-4 col__lg-3 col__xs-12 menuBar-item animated">
@@ -324,29 +324,35 @@
 							<form class="step-inner" method="POST">
 								<div class="row row-null">
 									<div class="col col__md-7 col__xs-12 step-inner-content" data-aos="fade-right" data-aos-delay="600">
-										<div class="tabs">
+										<div>
 											<div class="step-inner__item">
 												<h4>Контактные данные</h4>
-												<div class="tabs-list"><a class="tab active" href="#stage1"><span>Физическое лицо</span></a><a class="tab" href="#stage2"><span>Юридическое лицо</span></a></div>
+												<div class="tabs-list">
+													<div class="active"><span>Физическое лицо</span></div>
+													<div><span>Юридическое лицо</span></div>
+												</div>
 												<div class="row">
 													<div class="col col__xs-12 form__group">
-														<label class="control-body" for="name">
-															<input class="control" type="text" name="name" id="name" placeholder="Ваше имя" required="required" />
+														<label class="control-body" for="names">
+															<div class="error-text"></div>
+															<input class="control" type="text" name="names" id="names" placeholder="Ваше имя" required="required" />
 														</label>
 													</div>
 													<div class="col col__lg-6 col__xs-12 form__group">
 														<label class="control-body" for="phone">
+															<div class="error-text"></div>
 															<input class="control" type="text" name="phone" id="phone" placeholder="Телефон" required="required" />
 														</label>
 													</div>
 													<div class="col col__lg-6 col__xs-12 form__group">
-														<label class="control-body" for="email">
-															<input class="control" type="email" name="email" id="email" placeholder="Электронная почта" required="required" />
+														<label class="control-body" for="emails">
+															<div class="error-text"></div>
+															<input class="control" type="email" name="emails" id="emails" placeholder="Электронная почта" required="required" />
 														</label>
 													</div>
 												</div>
 											</div>
-											<div class="tabs-content show" id="stage1">
+											<div>
 												<div class="step-inner__item" data-aos="fade-up">
 													<h4>Куда доставить</h4>
 													<div class="row">
@@ -360,7 +366,7 @@
 														</div>
 														<div class="col col__lg-6 col__xs-12 form__group">
 															<label class="control-body" for="inde4x">
-																<input class="control" type="text" name="inde4x" id="inde4x" placeholder="Индекс" required="required" />
+																<input class="control" type="text" name="inde4x" id="inde4x" placeholder="Индекс" />
 															</label>
 														</div>
 														<div class="col col__xs-12 form__group">
@@ -372,16 +378,23 @@
 												</div>
 												<div class="step-inner__item" data-aos="fade-up">
 													<h4>Способ доставки</h4>
-													<div class="radio">
-														<input type="radio" id="delivery1" name="delivery">
+													<div class="radio error">
+														<input type="radio" id="delivery1" name="delivery" required>
 														<label class="label" for="delivery1">Курьером</label>
 														<div class="radio-inner"><span class="text__lg">2 540 р.</span><span class="text__sm text--grey">~ через 6 дней (17.04)</span></div>
 													</div>
-													<div class="radio">
+													<div class="radio error">
 														<input type="radio" id="delivery2" name="delivery">
 														<label class="label" for="delivery2">Самовывоз из пункта выдачи CDEK (по предоплате)</label>
 														<div class="radio-inner"><span class="text__lg">2 540 р.</span><span class="text__sm text--grey">~ через 6 дней (17.04)</span>
-															<div class="margtop10"><a class="popup-modal popup-with-zoom-anim" href="#cdek">Изменить пункт выдачи</a></div>
+															<div class="margtop10 select--js">
+																<select class="select error" required>
+																	<option value="" disabled selected>Выберите пункт выдачи</option>
+																	<option value="central">Москва</option>
+																	<option value="northwest">Санкт-Петербург</option>
+																	<option value="south">Краснодар</option>
+																</select>
+															</div>
 														</div>
 													</div>
 													<div class="radio">
@@ -424,123 +437,6 @@
 													</div>
 												</div>
 											</div>
-											<div class="tabs-content" id="stage2">
-												<div class="step-inner__item" data-aos="fade-up">
-													<h4>Куда доставить</h4>
-													<div class="row">
-														<div class="col col__lg-6 col__xs-12 form__group">
-															<select class="select">
-																<option value="" disabled selected>Выберите город</option>
-																<option value="central" data-tip="Центральный федеральный округ">Москва</option>
-																<option value="northwest" data-tip="Северо-Западный федеральный округ">Санкт-Петербург</option>
-																<option value="south" data-tip="Южный федеральный округ">Краснодар</option>
-															</select>
-														</div>
-														<div class="col col__lg-6 col__xs-12 form__group">
-															<label class="control-body" for="index">
-																<input class="control" type="text" name="index" id="index" placeholder="Индекс" required="required" />
-															</label>
-														</div>
-														<div class="col col__xs-12 form__group">
-															<label class="control-body" for="address">
-																<input class="control" type="text" name="address" id="address" placeholder="Адрес" required="required" />
-															</label>
-														</div>
-													</div>
-												</div>
-												<div class="step-inner__item" data-aos="fade-up">
-													<h4>Способ доставки</h4>
-													<div class="radio">
-														<input type="radio" id="delivery14" name="delivery">
-														<label class="label" for="delivery14">Курьером</label>
-														<div class="radio-inner"><span class="text__lg">2 540 р.</span><span class="text__sm text--grey">~ через 6 дней (17.04)</span></div>
-													</div>
-													<div class="radio">
-														<input type="radio" id="delivery24" name="delivery">
-														<label class="label" for="delivery24">Самовывоз из пункта выдачи CDEK (по предоплате)</label>
-														<div class="radio-inner"><span class="text__lg">2 540 р.</span><span class="text__sm text--grey">~ через 6 дней (17.04)</span>
-															<div class="margtop10"><a class="popup-modal popup-with-zoom-anim" href="#cdek">Изменить пункт выдачи</a></div>
-														</div>
-													</div>
-													<div class="radio">
-														<input type="radio" id="delivery34" name="delivery">
-														<label class="label" for="delivery34">Курьером CDEK (по предоплате)</label>
-														<div class="radio-inner"><span class="text__lg">2 911 р.</span><span class="text__sm text--grey">~ через 10 - 15 дней (21.04 - 26.04)</span></div>
-													</div>
-													<div class="radio">
-														<input type="radio" id="delivery44" name="delivery">
-														<label class="label" for="delivery44">Курьером CDEK (по предоплате)</label>
-														<div class="radio-inner"><span class="text__lg">2 695 р.</span><span class="text__sm text--grey">~ через 6 дней (17.04)</span></div>
-													</div>
-												</div>
-												<div class="step-inner__item" data-aos="fade-up">
-													<h4>Способ оплаты</h4>
-													<div class="radio">
-														<input type="radio" id="payment54" name="payment" checked>
-														<label class="label" for="payment54">Банковский счет (для юридических лиц)</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="company">
-															<input class="control" type="text" name="company" id="company" placeholder="Название компании" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="inn">
-															<input class="control" type="text" name="inn" id="inn" placeholder="ИНН" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="kpp">
-															<input class="control" type="text" name="kpp" id="kpp" placeholder="КПП" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="bic">
-															<input class="control" type="text" name="bic" id="bic" placeholder="БИК" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="korrBill">
-															<input class="control" type="text" name="korrBill" id="korrBill" placeholder="Корреспондентский счет" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="bill">
-															<input class="control" type="text" name="bill" id="bill" placeholder="Расчетный счет" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="legalBill">
-															<input class="control" type="text" name="legalBill" id="legalBill" placeholder="Юридический адрес" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="postAdr">
-															<input class="control" type="text" name="postAdr" id="postAdr" placeholder="Почтовый адрес" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="director">
-															<input class="control" type="text" name="director" id="director" placeholder="Руководитель" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="act">
-															<input class="control" type="text" name="act" id="act" placeholder="Рук. действ. на основании" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="state">
-															<input class="control" type="text" name="state" id="state" placeholder="Должность руководителя" required="required" />
-														</label>
-													</div>
-													<div class="form__group">
-														<label class="control-body" for="message">
-															<textarea class="control" name="message" id="message" placeholder="Комментарий к заказу" rows="5"></textarea>
-														</label>
-													</div>
-												</div>
-											</div>
 										</div>
 									</div>
 									<div class="col col__md-5 col__xs-12 step-inner-content" data-aos="fade-left" data-aos-delay="700">
@@ -567,13 +463,13 @@
 											<div class="step-goodSumm">
 												<p class="text__lg">Итого</p><b class="text__lg">24 098,67 р.</b>
 											</div>
-											<button class="btn btn--info btn--full btn--icon form__group franciscoItem" type="submit">
+											<button class="btn btn--info btn--full btn--icon form__group franciscoItem order--js" type="submit">
 												<div class="franciscoHelper"><span>Оформить заказ</span><img src="assets/images/whiteRightAr.svg" alt="" />
 												</div>
 											</button>
 											<div class="checkbox">
 												<input id="agreement" type="checkbox" name="agreement">
-												<label class="label" for="agreement"><span>Согласен на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности.</a></span></label>
+												<label class="label" for="agreement"><span>Согласен на обработку персональных данных в соответствии с <a href="assets/files/conf.pdf" target="_blank">политикой конфиденциальности.</a></span></label>
 											</div>
 										</div>
 									</div>
@@ -605,7 +501,7 @@
 										<input class="control" type="email" id="signForm" placeholder="Введите ваш E-mail" required>
 									</label>
 								</div>
-								<button class="section__bottom__form__button franciscoItem" type="submit">
+								<button class="section__bottom__form__button franciscoItem sign--js" type="submit">
 									<div class="franciscoHelper"><span>Подписаться на рассылку</span><img src="assets/images/str_white.svg" alt="" />
 									</div>
 								</button>
@@ -647,7 +543,7 @@
 								</div>
 								<div class="hidden__xs hidden__sm">
 									<div class="footer__title">Мы в соц. сетях</div>
-									<div class="footer__social"><a class="footer__social__item" href=""><i class="icon icon_fb"></i></a><a class="footer__social__item" href=""><i class="icon icon_vk"></i></a><a class="footer__social__item" href=""><i class="icon icon_yt"></i></a><a class="footer__social__item" href=""><i class="icon icon_inst"></i></a></div>
+									<div class="footer__social"><a class="footer__social__item" href="https://www.facebook.com/FKL-702336480212861/"><i class="icon icon_fb"></i></a><a class="footer__social__item" href="https://vk.com/fklrussia"><i class="icon icon_vk"></i></a><a class="footer__social__item" href="https://www.youtube.com/user/SergeyFKL"><i class="icon icon_yt"></i></a></div>
 								</div>
 							</div>
 							<div class="footer__col">
@@ -657,7 +553,7 @@
 								</div>
 								<div class="hidden__md hidden__lg hidden__xl">
 									<div class="footer__title">Мы в соц. сетях</div>
-									<div class="footer__social"><a class="footer__social__item" href=""><i class="icon icon_fb"></i></a><a class="footer__social__item" href=""><i class="icon icon_vk"></i></a><a class="footer__social__item" href=""><i class="icon icon_yt"></i></a><a class="footer__social__item" href=""><i class="icon icon_inst"></i></a></div>
+									<div class="footer__social"><a class="footer__social__item" href="https://www.facebook.com/FKL-702336480212861/"><i class="icon icon_fb"></i></a><a class="footer__social__item" href="https://vk.com/fklrussia"><i class="icon icon_vk"></i></a><a class="footer__social__item" href="https://www.youtube.com/user/SergeyFKL"><i class="icon icon_yt"></i></a></div>
 								</div><a class="footer__download" href="">Скачать презентацию<span>PDF</span></a>
 								<div class="hidden__md hidden__lg hidden__xl">
 									<div class="footer__copy">© 2019 «FKL»</div><a class="footer__copy franciscoItem" href="assets/files/user.pdf" target="_blank"><span class="franciscoHelper">Условия пользовательского соглашения</span></a><a class="footer__copy franciscoItem" href="assets/files/offer.pdf" target="_blank"><span class="franciscoHelper">Публичная оферта</span></a><a class="footer__copy franciscoItem" href="assets/files/conf.pdf" target="_blank"><span class="franciscoHelper">Политика конфицендиальности</span></a>
