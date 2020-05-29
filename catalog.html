@@ -110,15 +110,15 @@
 			<div class="mfp-hide popup-block zoom-anim-dialog" id="call">
 				<div class="popup-inner">
 					<div class="icon-delete popup-modal-dismiss"></div>
-					<form class="faq-form__right">
+					<form class="faq-form__right" data-form="question">
 						<div class="inner text--center">
 							<h4>Спасибо, мы обязательно <br> перезвоним</h4>
 							<div class="form__group"><a class="btn btn--primary btn--full return--js" href="#"><span>Запросить еще раз</span></a></div>
 						</div>
 						<div class="outer">
 							<div class="form__group">
-								<label class="control-body" for="name">
-									<input class="control" type="text" name="name" id="name" placeholder="Ваше имя" required="required" />
+								<label class="control-body" for="modal-name">
+									<input class="control" type="text" name="modal-name" id="modal-name" placeholder="Ваше имя" required="required" />
 								</label>
 							</div>
 							<div class="form__group">
@@ -127,16 +127,16 @@
 								</label>
 							</div>
 							<div class="form__group">
-								<label class="control-body" for="message">
-									<textarea class="control" name="message" id="message" placeholder="Комментарий" rows="5"></textarea>
+								<label class="control-body" for="modal-message">
+									<textarea class="control" name="modal-message" id="modal-message" placeholder="Комментарий" rows="5"></textarea>
 								</label>
 							</div>
 							<div class="row">
-								<div class="col col__lg-6 col__xs-12 form__group"><a class="btn btn--primary btn--full" href="#"><span>Задать вопрос</span></a></div>
+								<div class="col col__lg-6 col__xs-12 form__group"><a class="btn btn--primary btn--full simpleForm-btn" href="#"><span>Задать вопрос</span></a></div>
 								<div class="col col__lg-6 col__xs-12 first__xs last__lg form__group">
 									<div class="checkbox">
-										<input type="checkbox" id="faqId">
-										<label class="label" for="faqId">Нажимая на кнопку «Задать вопрос», вы соглашаетесь на обработку персональных данных в соответствии с <a href="assets/files/conf.pdf" target="_blank">политикой конфиденциальности</a>.</label>
+										<input type="checkbox" id="modal-faqId" required checked>
+										<label class="label" for="modal-faqId">Нажимая на кнопку «Задать вопрос», вы соглашаетесь на обработку персональных данных в соответствии с <a href="assets/files/conf.pdf" target="_blank">политикой конфиденциальности</a>.</label>
 									</div>
 								</div>
 							</div>
@@ -555,72 +555,46 @@
 														<div class="franciscoHelper">Добавить в корзину</div>
 													</a></div>
 											</div>
+											<ul class="pagination" data-aos="fade-up">
+												<li class="pagination__item franciscoItem"><a class="pagination__link franciscoLink" href="#">
+														<div class="franciscoHelper"><img src="assets/images/arrow-left--long-gr.svg" alt="" />
+														</div>
+													</a></li>
+												<li class="pagination__item active"><a class="pagination__link" href="#">1</a></li>
+												<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+												<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+												<li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+												<li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+												<li class="pagination__item"><a class="pagination__link" href="#">6</a></li>
+												<li class="pagination__item"><a class="pagination__link" href="#">7</a></li>
+												<li class="pagination__item franciscoItem"><a class="pagination__link franciscoLink" href="#">
+														<div class="franciscoHelper"><img src="assets/images/arrow-right--long-gr.svg" alt="" />
+														</div>
+													</a></li>
+											</ul>
 										</div>
 										<div class="tabs-content" id="stage2">
-											<div class="catalog__inner">
-												<div class="catalog__item"><a class="card__item__inner" href="#">
-														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_2.png" alt=""></div>
-														<div class="section__bottom__slider__item__tags">
-															<div class="section__bottom__slider__item__tag">#Скидка</div>
-															<div class="section__bottom__slider__item__tag">#Новинка</div>
-														</div>
-														<div class="section__bottom__slider__item__name">Подшипник шариковый самоустанавливающийся 6205-2S.EES</div>
-														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
-														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
-														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</a><a class="btn btn--full btn--default franciscoItem" href="#">
-														<div class="franciscoHelper">Добавить в корзину</div>
-													</a></div>
-												<div class="catalog__item"><a class="card__item__inner" href="#">
-														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_2.png" alt=""></div>
-														<div class="section__bottom__slider__item__tags">
-															<div class="section__bottom__slider__item__tag">#Скидка</div>
-															<div class="section__bottom__slider__item__tag">#Новинка</div>
-														</div>
-														<div class="section__bottom__slider__item__name">Подшипник шариковый самоустанавливающийся 6205-2S.EES</div>
-														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
-														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
-														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</a><a class="btn btn--full btn--default franciscoItem" href="#">
-														<div class="franciscoHelper">Добавить в корзину</div>
-													</a></div>
-												<div class="catalog__item"><a class="card__item__inner" href="#">
-														<div class="card__item__inner-img"><img class="section__bottom__slider__item__img" src="assets/images/prod_2.png" alt=""></div>
-														<div class="section__bottom__slider__item__tags">
-															<div class="section__bottom__slider__item__tag">#Скидка</div>
-															<div class="section__bottom__slider__item__tag">#Новинка</div>
-														</div>
-														<div class="section__bottom__slider__item__name">Подшипник шариковый самоустанавливающийся 6205-2S.EES</div>
-														<div class="section__bottom__slider__item__price">529,86 ₽<span>с НДС</span></div>
-														<div class="section__bottom__slider__item__state state_have">Есть в наличии</div>
-														<div class="section__bottom__slider__item__bot-inf">Артикул: 6206-2Z</div>
-													</a><a class="btn btn--full btn--default franciscoItem" href="#">
-														<div class="franciscoHelper">Добавить в корзину</div>
-													</a></div>
+											<div class="tabs-content-inner">
+												<h2>Заголовок h2</h2>
+												<h3>Заголовок h3</h3>
+												<h4>Заголовок h4</h4><br><br>
+												<p>Качество продукции FKL основано на производственных процессах и технологии, которыми обладает FKL, на проверенных поставщиках, персонале, который способен быстро и эффективно осваивать новую продукцию и на самой организации, которая объединяет процессы FKL в единое целое.</p>
+												<p>Особое и важное место занимает процесс контроля, который своими действиями гарантирует качество, это отображается в работе входного контроля, контроля процессов производства и выходного контроля.</p><br>
+												<h3>Ненумерованные списки</h3>
+												<ul class="list--dots">
+													<li>9902892781</li>
+													<li>237708.0</li>
+													<li>F04010131R</li>
+													<li>6004-2RSH</li>
+													<li>6004LLU</li>
+												</ul>
 											</div>
 										</div>
 									</div>
-									<ul class="pagination" data-aos="fade-up">
-										<li class="pagination__item franciscoItem"><a class="pagination__link franciscoLink" href="#">
-												<div class="franciscoHelper"><img src="assets/images/arrow-left--long-gr.svg" alt="" />
-												</div>
-											</a></li>
-										<li class="pagination__item active"><a class="pagination__link" href="#">1</a></li>
-										<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-										<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-										<li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
-										<li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
-										<li class="pagination__item"><a class="pagination__link" href="#">6</a></li>
-										<li class="pagination__item"><a class="pagination__link" href="#">7</a></li>
-										<li class="pagination__item franciscoItem"><a class="pagination__link franciscoLink" href="#">
-												<div class="franciscoHelper"><img src="assets/images/arrow-right--long-gr.svg" alt="" />
-												</div>
-											</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>
-						<form class="section__bottom__form sticky-stopper" data-aos="fade-up">
+						<form class="section__bottom__form sticky-stopper" data-aos="fade-up" data-form="subscribe">
 							<div class="section__bottom__form__row">
 								<div class="section__bottom__title">Подпишись,<br>чтобы быть вкурсе дел</div>
 								<div class="section__bottom__form__col">
@@ -642,10 +616,10 @@
 								<div class="section__bottom__form__input">
 									<label class="control-body" for="signForm">
 										<div class="error-text"></div>
-										<input class="control" type="email" id="signForm" placeholder="Введите ваш E-mail" required>
+										<input class="control" type="email" name="mail" id="signForm" placeholder="Введите ваш E-mail" required>
 									</label>
 								</div>
-								<button class="section__bottom__form__button franciscoItem sign--js" type="submit">
+								<button class="section__bottom__form__button franciscoItem simpleForm-btn" type="submit">
 									<div class="franciscoHelper"><span>Подписаться на рассылку</span><img src="assets/images/str_white.svg" alt="" />
 									</div>
 								</button>
@@ -676,7 +650,7 @@
 									<div class="footer__title open--js">Склад</div>
 									<div class="footer-inner">
 										<div class="footer__text">с. Бабяково, Новоусманского района, ул. Индустриальная, 61в<br><br>10 км от г. Воронежа съезд с М-4 на Тамбов (А-144). Индустриальный Парк «ПЕРСПЕКТИВА»</div>
-										<div class="user-links"><a class="footer__copy hidden__xs hidden__sm franciscoItem" href="assets/files/user.pdf" target="_blank"><span class="franciscoHelper">Условия пользовательского соглашения</span></a><a class="footer__copy hidden__xs hidden__sm franciscoItem" href="assets/files/offer.pdf" target="_blank"><span class="franciscoHelper">Публичная оферта</span></a><a class="footer__copy hidden__xs hidden__sm franciscoItem" href="assets/files/conf.pdf" target="_blank"><span class="franciscoHelper">Политика конфицендиальности</span></a></div>
+										<div class="user-links hidden__xs hidden__sm"><a class="footer__copy franciscoItem" href="assets/files/user.pdf" target="_blank"><span class="franciscoHelper">Условия пользовательского соглашения</span></a><a class="footer__copy franciscoItem" href="assets/files/offer.pdf" target="_blank"><span class="franciscoHelper">Публичная оферта</span></a><a class="footer__copy franciscoItem" href="assets/files/conf.pdf" target="_blank"><span class="franciscoHelper">Политика конфицендиальности</span></a></div>
 									</div>
 								</div>
 							</div>
@@ -699,7 +673,7 @@
 									<div class="footer__title">Мы в соц. сетях</div>
 									<div class="footer__social"><a class="footer__social__item" href="https://www.facebook.com/FKL-702336480212861/"><i class="icon icon_fb"></i></a><a class="footer__social__item" href="https://vk.com/fklrussia"><i class="icon icon_vk"></i></a><a class="footer__social__item" href="https://www.youtube.com/user/SergeyFKL"><i class="icon icon_yt"></i></a></div>
 								</div><a class="footer__download" href="">Скачать презентацию<span>PDF</span></a>
-								<div class="hidden__md hidden__lg hidden__xl">
+								<div class="hidden__md hidden__lg hidden__xl mobile-ver">
 									<div class="footer__copy">© 2019 «FKL»</div><a class="footer__copy franciscoItem" href="assets/files/user.pdf" target="_blank"><span class="franciscoHelper">Условия пользовательского соглашения</span></a><a class="footer__copy franciscoItem" href="assets/files/offer.pdf" target="_blank"><span class="franciscoHelper">Публичная оферта</span></a><a class="footer__copy franciscoItem" href="assets/files/conf.pdf" target="_blank"><span class="franciscoHelper">Политика конфицендиальности</span></a>
 								</div>
 								<div class="footer__copy"><a href=""><img src="assets/images/cloudmillF.svg" alt=""></a></div>
